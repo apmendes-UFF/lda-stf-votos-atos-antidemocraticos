@@ -21,7 +21,7 @@ data/
   termotopic_Betamatrix.xlsx       # Matriz beta (probabilidade termo-tópico)
   topicdoc_Thetamatrix.xlsx        # Tópico dominante por documento
   votos_tokens.xlsx                # Base de tokens pré-processada (saída do script 3)
-figures/
+graphs/
   Figura1_paginas_x_pena.png              # Nº de páginas dos votos/acórdãos x tipo de pena
   Figura2_top20_palavras.png              # Top-20 palavras mais mencionadas
   Figura3_top10_tfidf.png                 # Top-10 palavras por tf-idf
@@ -30,6 +30,7 @@ figures/
   Figura6_distribuicao_documentos_topicos.png  # Distribuição dos documentos por tópico
   Figura7_scatterplot_tempos_pena.png     # Tempos de pena por tópico
   Figura8_dispersao_topicos_paginas.png   # Dispersão dos tópicos por nº de páginas
+  extras/                                 # Gráficos presentes no script mas não na versão final do artigo
 ```
  
 **Nota sobre dados pessoais:** os arquivos `metadata.xlsx` (que contém nomes completos dos réus na coluna `reu`) e `sw_deffendantsnames.xlsx` (lista de nomes usada na etapa de remoção de stopwords) **não são publicados neste repositório**, por conterem dados pessoais identificáveis de réus em processos criminais. Estão disponíveis mediante solicitação direta aos autores.
@@ -50,9 +51,9 @@ Os scripts devem ser executados na ordem numérica (`0` a `6`). Cada um pressup�
  
 Os acórdãos originais em PDF não são redistribuídos neste repositório por serem arquivos volumosos e de acesso público direto no site do STF. As matrizes intermediárias (tokens, beta, theta) e as métricas de ajuste estão disponíveis em `data/`, permitindo reproduzir a modelagem de tópicos e as análises a partir da etapa de pré-processamento sem a necessidade de reprocessar os PDFs originais. A tabela completa de metadados (com identificação dos réus) pode ser disponibilizada mediante solicitação direta aos autores, resguardando dados pessoais de terceiros.
  
-## Figuras
+## Gráficos
  
-A pasta `figures/` contém as 8 figuras geradas pelos scripts e utilizadas no artigo (Figuras 1 a 8), na mesma numeração da versão final do texto, permitindo conferência direta entre o repositório e o artigo publicado.
+A pasta `graphs/` contém as 8 figuras geradas pelos scripts e utilizadas no artigo (Figuras 1 a 8), na mesma numeração da versão final do texto, permitindo conferência direta entre o repositório e o artigo publicado. Também foi incluída uma pasta extra de gráficos presentes nos scripts que não estão na versão final do artigo.
  
 ## Citação
  
