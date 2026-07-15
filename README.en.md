@@ -65,7 +65,7 @@ If you use this code, please cite the article:
 
 ## License
 
-[MIT / CC-BY 4.0 — to be defined by the authors]
+[MIT]
 
 ## Contact
 
